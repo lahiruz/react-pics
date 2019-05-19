@@ -3,10 +3,15 @@ import React from 'react';
 class SearchBar extends React.Component {
 	state = {searchTerm: ''};
 
+	onFromSubmit = event => {
+		event.preventDefault();
+		console.log(this.state.searchTerm);
+	};
+
 	render() {
 		return (
 			<div className='ui segment'>
-				<form className='ui form'>
+				<form className='ui form' onSubmit={this.onFromSubmit}>
 					<div className='field'>
 						<label>Image Search</label>
 						<input type='text'
