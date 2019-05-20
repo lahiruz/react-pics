@@ -1,17 +1,14 @@
 import React from 'react';
-import axios from 'axios';
 
+import unsplash from '../api/unsplash'
 import SearchBar from './SearchBar';
 
 class App extends React.Component {
 	state = {results: []};
 
 	onSearchTermSubmit = async (term) => {
-		const imageResults = await axios.get('https://api.unsplash.com/search/photos', {
-			params: {query: term},
-			headers: {
-				Authorization: 'Client-ID cabf593cdb47d08a676abea7ed91b819d04e416357ad23f1059d5551257beab8'
-			}
+		const imageResults = await unsplash.get('/search/photos', {
+			params: {query: term}
 		});
 
 		this.setState({results: imageResults.data.results});
