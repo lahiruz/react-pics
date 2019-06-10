@@ -1,8 +1,6 @@
 # React Pics
 
-> Simple React application to show different images based on your search.
-
-> Search results will be shown in a grid as shown in the below.
+> Simple React application render different images based on your search as shown in the below.
 
 <div style="align: center">
     <img src="./pics.png" />
