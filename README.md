@@ -1,9 +1,8 @@
 # React Pics
 
-Deployed in: https://react-pics-psi.vercel.app/
-
 > Simple React application render different images based on your search as shown in the below.
 
+> https://react-pics-psi.vercel.app/
 <div style="align: center">
     <img src="./pics.png" />
 </div>
